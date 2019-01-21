@@ -5,6 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface PersonRepository extends CrudRepository<Person, Long> {
+public interface PersonpagingAndSortingRepository extends CrudRepository<Person, Long> {
+
     List<Person> findByAgeAfter(Integer afterAge);
 }
